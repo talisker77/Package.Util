@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+  <PropertyGroup>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">$(MSBuildProjectDirectory)\..\</SolutionDir>
+    <UtilToolsPath Condition="'$(UtilToolsPath)'==''">$([System.IO.Path]::Combine($(SolutionDir), ".tools"))</UtilToolsPath>
+
+  </PropertyGroup>
+
+  <PropertyGroup>
+
+    <UtilToolsExe>$(UtilToolsPath)\OCS.Package.Util.exe</UtilToolsExe>
+    <!-- 
+    <Target Name="AfterBuild" Condition="'$(Configuration)'=='Debug'">
+      <Exec Command="&quot;$(SolutionDir).tools\OCS.Package.Util.exe&quot; &quot;{Id:\&quot;$(ProjectName)\&quot;, PathToAssembly: \&quot;$(TargetPath)\&quot;, OutputPath:\&quot;$(TargetDir)&quot;, ProjectPath: \&quot;$(ProjectDir)&quot;}&quot;" />
+    </Target> 
+  -->
+
+    <PackageCreateCommand>"$(UtilToolsExe)" "{Id:\&quot;$(ProjectName)\&quot;, PathToAssembly: \&quot;$(TargetPath)\&quot;, OutputPath:\&quot;$(TargetDir)&quot;, ProjectPath: \&quot;$(ProjectDir)&quot;}"</PackageCreateCommand>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <NugetPackageFiles Include="$(TargetDir)*.nupkg" />
+  </ItemGroup>
+
+  <Target Name="DeleteNugetPackageFiles" BeforeTargets="CoreCompile;Clean">
+    <Message Text="Deleting all nuget package files in: $(TargetDir)"/>
+    <Delete Files="@(NugetPackageFiles)"/>
+  </Target>
+
+
+  <Target Name="PackageFactory"  AfterTargets="CopyFilesToOutputDirectory"  Condition="'$(Configuration)'=='Release'">
+    <Exec Command="$(PackageCreateCommand)"  LogStandardErrorAsError="true"/>
+  </Target>
+</Project>

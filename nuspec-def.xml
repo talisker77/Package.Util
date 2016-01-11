@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <summary>A package create and deploy tool...</summary>
+    <isToolsOnly>true</isToolsOnly>
+    <includePdb>false</includePdb>
+    <publishPackage>true</publishPackage>
+    <packageSource>http://ocsutv01/</packageSource>
+  </metadata>
+  <files>
+    <file src="OCS.Package.Util.exe" target=".util" />
+    <file src="..\..\targets\ocs.package.util.targets" target=".util" />
+    <file src="..\..\psScripts\init.ps1" target="tools\Init.ps1" />
+    <file src="..\..\psScripts\Install.ps1" target="tools" />
+    <file src="..\..\readme.md" target="content" />
+  </files>
+</package>

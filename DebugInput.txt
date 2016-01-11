@@ -1,0 +1,17 @@
+﻿"{Id:\"OCS.Package\", PathToAssembly: \"D:\tm\OCS Internal\OCS.Package\bin\Debug\OCS.Package.dll\", OutputPath:\"D:\tm\OCS Internal\OCS.Package\bin\Debug\", ProjectPath: \"D:\tm\OCS Internal\OCS.Package\"}"
+
+"{Id:\"TestUmsSms\", PathToAssembly: \"C:\Users\eto\Documents\visual studio 2013\Projects\TestUmsSms\TestUmsSms\bin\Debug\TestUmsSms.exe\", OutputPath:\"C:\Users\eto\Documents\visual studio 2013\Projects\TestUmsSms\TestUmsSms\bin\Debug\", ProjectPath: \"C:\Users\eto\Documents\visual studio 2013\Projects\TestUmsSms\TestUmsSms\"}"
+
+"{Id:\"OCS.Package.Util\", PathToAssembly: ""D:\tm\OCS Internal\OCS.Package\OCS.Package.Util\bin\Release\OCS.Package.Util.exe"", OutputPath: ""D:\tm\OCS Internal\OCS.Package\OCS.Package.Util\bin\Release\\"", ProjectPath: ""D:\tm\OCS Internal\OCS.Package\OCS.Package.Util\""}"
+
+"{Id:\"OCS.Common.Log\", PathToAssembly: \"D:\tm\OCS Internal\OCS.Package\OCS.Package.Util\bin\Release\OCS.Package.Util.exe\", OutputPath:\"D:\tm\OCS Internal\OCS.Package\OCS.Package.Util\bin\Release\", ProjectPath: \"D:\tm\OCS Internal\OCS.Package\OCS.Package.Util\"}"
+
+"{Id:\"OCS.Package.Util\", PathToAssembly: \"D:\tm\OCS Internal\OCS.Package\bin\Debug\OCS.Package.dll\", OutputPath:\"D:\tm\OCS Internal\OCS.Package\bin\Debug\", ProjectPath: \"D:\tm\OCS Internal\OCS.Package\"}"
+
+"{Id:\"TestUmsSms\", PathToAssembly: \"C:\Users\eto\Documents\visual studio 2013\Projects\TestUmsSms\TestUmsSms\bin\Debug\TestUmsSms.exe\", OutputPath:\"C:\Users\eto\Documents\visual studio 2013\Projects\TestUmsSms\TestUmsSms\bin\Debug\", ProjectPath: \"C:\Users\eto\Documents\visual studio 2013\Projects\TestUmsSms\TestUmsSms\"}"
+
+"{Id:\"OCS.Server.Web\", PathToAssembly: \"d:\tm\OCS\OCS\OCS-dev\OCS.Server\OCS.Server.Web\bin\OCS.Server.Web.dll\", OutputPath:\"d:\tm\OCS\OCS\OCS-dev\OCS.Server\OCS.Server.Web\bin\", ProjectPath: \"d:\tm\OCS\OCS\OCS-dev\OCS.Server\OCS.Server.Web\"}"
+
+"{Id:\"OCS.Self.Service.Web\", PathToAssembly: \"\\v-ocs-01\C$\Builds\1\OCS HR\OCS Self Service Nightly\Binaries\OCS.Self.Service.Web.dll\", OutputPath:\"\\v-ocs-01\C$\Builds\1\OCS HR\OCS Self Service Nightly\Binaries\", ProjectPath: \"\\v-ocs-01\C$\Builds\1\OCS HR\OCS Self Service Nightly\Sources\Self Service\OCS Self Service\OCSWeb_20\"}"
+
+"{Id:\"OCS.Database.SelfService.Def\", PathToAssembly: \"d:\tm\OCS HR\Database\OCS.Database.Solution\OCS.Database.SelfService.Def\bin\", OutputPath:\"d:\tm\OCS HR\Database\OCS.Database.Solution\OCS.Database.SelfService.Def\bin\", ProjectPath: \"d:\tm\OCS HR\Database\OCS.Database.Solution\OCS.Database.SelfService.Def\"}"
